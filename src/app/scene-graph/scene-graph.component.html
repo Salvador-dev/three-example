@@ -1,0 +1,15 @@
+<!-- <ngt-mesh #mesh>
+    <ngt-box-geometry />
+</ngt-mesh> -->
+
+<ngt-ambient-light [intensity]="1"></ngt-ambient-light>
+<ngt-directional-light [intensisy]="1" [position]="[0, 0, 1]" />
+<ngt-directional-light [intensisy]="1" [position]="[0, 0, -1]" />
+<ngt-point-light [intensisy]="0.5" [position]="[1, 1, 0]" />
+<ngt-point-light [intensisy]="0.5" [position]="[1, 1, 0]" />
+
+<ngt-primitive *args="[model()]" [position]="[0, -0.7, -0.1]" />
+
+<ngt-orbit-controls #orbitControls *args="[camera(), glDomElement()]" [enableZoom]="true" [autoRotate]="true" [autoRotateSpeed]="5"/>
+
+
